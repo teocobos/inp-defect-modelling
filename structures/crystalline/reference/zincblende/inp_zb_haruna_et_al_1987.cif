@@ -1,0 +1,53 @@
+data_InP_zincblende_Haruna_et_al_1987
+
+_audit_creation_method
+;
+Reconstructed project reference for room-temperature zincblende InP.
+
+The cubic lattice parameter used in this project is a = 5.8688 Angstrom
+at approximately 300 K.
+
+This is the rounded representation of the standard room-temperature
+lattice parameter a = 5.86875 Angstrom reported in established InP
+structural-property literature.
+
+Experimental temperature-dependent lattice measurements were reported by:
+
+K. Haruna, H. Maeta, K. Ohashi and T. Koike,
+"The thermal expansion coefficient and Gruneisen parameter of InP
+crystal at low temperatures",
+Journal of Physics C: Solid State Physics 20, 5275-5279 (1987).
+DOI: 10.1088/0022-3719/20/32/013
+
+Haruna et al. measured the InP lattice constant over the range
+4.2-300 K using the precision X-ray Bond method.
+
+The crystallographic model is zincblende InP, space group F-43m
+(No. 216), represented by the symmetry-inequivalent In and P sites.
+
+This file is a reconstructed project reference and is not an original
+deposited experimental CIF.
+;
+
+_chemical_formula_sum 'In4 P4'
+_chemical_formula_structural 'InP'
+
+_cell_length_a    5.8688
+_cell_length_b    5.8688
+_cell_length_c    5.8688
+_cell_angle_alpha 90
+_cell_angle_beta  90
+_cell_angle_gamma 90
+
+_space_group_name_H-M_alt 'F -4 3 m'
+_space_group_IT_number 216
+
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+In1 In 0.0000000000 0.0000000000 0.0000000000 1.0
+P1  P  0.2500000000 0.2500000000 0.2500000000 1.0

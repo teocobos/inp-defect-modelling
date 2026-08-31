@@ -1,0 +1,78 @@
+material:
+  name: indium phosphide
+  formula: InP
+  phase: zincblende
+
+crystallography:
+  crystal_system: cubic
+  space_group_symbol: F-43m
+  space_group_number: 216
+
+experimental_reference:
+  temperature_K: 300
+  literature_lattice_parameter_angstrom: 5.86875
+  project_lattice_parameter_angstrom: 5.8688
+
+  source:
+    authors:
+      - K. Haruna
+      - H. Maeta
+      - K. Ohashi
+      - T. Koike
+    title: The thermal expansion coefficient and Grüneisen parameter of InP crystal at low temperatures
+    journal: Journal of Physics C: Solid State Physics
+    volume: 20
+    pages: 5275-5279
+    year: 1987
+    doi: 10.1088/0022-3719/20/32/013
+    measurement_temperature_range_K: 4.2-300
+    method: precision X-ray lattice-parameter measurement
+
+source_database: null
+database_id: null
+
+reference_structure:
+  filename: inp_zb_haruna_et_al_1987.cif
+  path: structures/crystalline/reference/zincblende/inp_zb_haruna_et_al_1987.cif
+  type: reconstructed_experimental_reference
+  original_deposited_cif: false
+  conventional_cell_composition: In4P4
+  reduced_formula: InP
+  atoms: 8
+  lattice_parameter_angstrom: 5.8688
+  volume_angstrom3: 202.137984
+  sha256: 3a3627b1a5935cb15bb8b4b051a185d8fc62c89567776f469e4dae7dd319bcd7
+
+canonical_structures:
+  cif:
+    path: structures/crystalline/reference/zincblende/canonical/inp_zb_canonical.cif
+    sha256: 34f30ee880fbc90eb60bc48ab4a6d6ee8e323e8c1e08bbef725d89a3c0f5d3e3
+
+  vasp:
+    path: structures/crystalline/reference/zincblende/canonical/inp_zb_canonical.vasp
+    sha256: ec96af6b609c5786140568d33b9492d97e96eab29132ed4c2600703d490cef16
+
+validation:
+  composition: pass
+  lattice: pass
+  symmetry: pass
+  in_wyckoff: 4a
+  p_wyckoff: 4c
+  in_coordination: 4
+  p_coordination: 4
+  nearest_neighbour_distance_angstrom: 2.541265
+  canonical_cif: pass
+  canonical_vasp: pass
+  reference_to_canonical_cif_equivalence: pass
+  reference_to_canonical_vasp_equivalence: pass
+  normalized_rms_displacement: 0.0
+  maximum_displacement: 0.0
+  approved_for_dft_convergence: true
+
+workflow:
+  validation_script: scripts/structure_generation/validate_reference_structure.py
+  canonical_generation_script: scripts/structure_generation/generate_canonical_structure.py
+  equivalence_script: scripts/structure_generation/compare_structures.py
+  reference_geometry_relaxed: false
+  canonical_geometry_relaxed: false
+  phase_1_status: complete
